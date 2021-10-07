@@ -42,7 +42,8 @@ public class HomeworkTwo {
             leap = true;
         } else {
             leap = year % 100 != 0 && year % 4 == 0;
-  
+        }
         return leap;
     }
+
 }
