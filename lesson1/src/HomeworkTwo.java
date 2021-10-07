@@ -10,10 +10,8 @@ public class HomeworkTwo {
     }
 
     public static boolean compareSum(int a, int b){
-        boolean compare;
         int sum = a + b;
-        compare = sum >= 10 && sum <= 20;
-        return compare;
+        return sum >= 10 && sum <= 20;
     }
 
     public static void positiveComp(int a){
@@ -25,9 +23,7 @@ public class HomeworkTwo {
     }
 
     public static boolean negativeComp(int a){
-        boolean negativeNum;
-        negativeNum = a < 0;
-        return negativeNum;
+        return a < 0;
     }
 
     public static void rowWriting(String a, int b){
@@ -37,13 +33,7 @@ public class HomeworkTwo {
     }
 
     public static boolean leapYear(int year){
-        boolean leap = false;
-        if (year % 400 == 0) {
-            leap = true;
-        } else {
-            leap = year % 100 != 0 && year % 4 == 0;
-        }
-        return leap;
+        return year % 400 == 0 || (year % 100 != 0 && year % 4 == 0);
     }
 
 }
