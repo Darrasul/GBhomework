@@ -37,14 +37,12 @@ public class HomeworkTwo {
     }
 
     public static boolean leapYear(int year){
-        boolean leap;
-        if (year % 4 == 0){
-            if (year % 400 == 0){
-                leap = true;
-            } else leap = year % 100 != 0;
+        boolean leap = false;
+        if (year % 400 == 0) {
+            leap = true;
         } else {
-            leap = false;
-        }
+            leap = year % 100 != 0 && year % 4 == 0;
+  
         return leap;
     }
 }
