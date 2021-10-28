@@ -28,7 +28,7 @@ public class HomeworkEight extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String stepValue = stepText.getText();
-                value.setText(String.valueOf(counter + Integer.parseInt(stepValue)));
+                value.setText(String.valueOf(counter = counter + Integer.parseInt(stepValue)));
                 stepText.setText("Enter number");
             }
         });
